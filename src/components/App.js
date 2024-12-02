@@ -1,11 +1,15 @@
 
-import React from "react";
+import React,{useState} from "react";
 import './../styles/App.css';
-
+import Task from "./Task"
+import Todo from "./Todo";
 const App = () => {
+
+  let [task,setTask] = useState([]); 
   return (
     <div>
-        {/* Do not remove the main div */}
+        <Task task={task} setTask={setTask} />
+        <Todo task={task}  />
     </div>
   )
 }
