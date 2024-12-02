@@ -4,5 +4,6 @@
     align-items: center;
     justify-content: space-between;
     width:300px;
-
+    padding: 0;
+    list-style: none;
 }

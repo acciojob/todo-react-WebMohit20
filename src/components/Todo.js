@@ -11,17 +11,17 @@ const Todo = ({task})=>{
 
     return (
         <div>
-           
+           <ul>
             {
                 task.length ? task.map((list)=>{
                     return( 
-                    <div className="task"> 
+                    <li className="task"> 
                        <p> {list} </p>
                        <button onClick={handleDeleteBtn} >Delete</button>
-                    </div> )
+                    </li> )
                 }) : null
             }
-           
+           </ul>
         </div>
     )
 }
